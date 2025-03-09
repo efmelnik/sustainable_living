@@ -1,0 +1,168 @@
+/* Ehud Melnik */
+/* March 9th, 2025 */
+
+/* Global Backgrounds, Colors, and Widths */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+  }
+  
+  header, nav ul, #content-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  a {
+    color: #008000;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+/* Header, Logo */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  #logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 42px;
+  }
+  
+  header h1, nav ul {
+    padding-left: 50px;
+  }
+  
+/* Navigation */
+  nav {
+    background-color: #008000;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    background-color: black;
+    color: #9ae39a;
+  }
+  
+/* Content Wrapper, Home Page Main Image and Bottom Columns, Home Page Columns, and Sidebar */
+  #content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  
+  main {
+    flex: 4;
+    padding-right: 20px;
+    order: 2;
+  }
+  
+  aside {
+    flex: 1;
+    background-color: #ccc;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    position: relative;
+    top: 20px;
+    order: 1;
+  }
+  
+  article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 3px double #333;
+    float: left;
+    margin-top: 0.5rem;
+    margin-right: 0.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  aside section {
+    background-color: white;
+    margin-bottom: 1rem;
+    border: 1px solid #008000;
+    padding: 10px;
+  }
+  
+  aside h3 {
+    background-color: #008000;
+    color: white;
+    padding: 0.5rem;
+    margin: 0;
+  }
+  
+  aside a {
+    display: inline-block;
+    padding: 0.5rem;
+  }
+  
+  main section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  main section div {
+    background-color: #e7ffe7;
+    border: 1px solid #008000;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 1rem;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  main section div:last-child {
+    margin-right: 0;
+  }
+  
+  main section div h2 {
+    background-color: #008000;
+    color: white;
+    margin-top: 0;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+  }
+  
+  main section div img {
+    border: 3px double #333;
+    display: block;
+    margin: 0 auto;
+  }  
